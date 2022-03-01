@@ -1,0 +1,248 @@
+/* Imports */
+/* @import url(section-hero.css);
+@import url(section-steps.css);
+@import url(section-featured.css);
+@import url(section-meals.css);
+@import url(section-testimonial.css);
+@import url(section-pricing.css);
+@import url(section-cta.css);
+@import url(section-footer.css);
+@import url(media-queries.css); */
+
+/* Defaults */
+
+/* Colors */
+/* 
+Primary: #e67e22
+tints: #fdf2e9
+shades: #cf711f
+Grey:
+  #555
+  #333
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 4px dotted palegreen;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", "Inter", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.margin-dwn {
+  margin-bottom: 4.8rem !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* *************** */
+/* Grid Classes */
+
+/* Custom Grid Defined */
+
+/* .grid-name {
+  display: grid;
+  gap: 0;
+  grid-template-columns: ;
+  grid-template-rows: ;
+  grid-column: ;
+  grid-row: ;
+  align-items: ;
+  justify-content: ;
+  justify-items: ;
+} */
+
+/* xxxxxxxxxx */
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid-cent-align {
+  align-items: center;
+}
+
+.center-cont {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid-2-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5-col {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* ************************** */
+/* ************************** */
+
+/* Header Items */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/* Header: Navigation */
+.header-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  /* flex-direction: row; */
+  gap: 3.2rem;
+}
+
+.header-nav-link:link,
+.header-nav-link:visited {
+  text-decoration: none;
+  display: inline-block;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.header-nav-link:hover,
+.header-nav-link:active {
+  color: #cf711f;
+}
+
+.header-nav-link.header-CTA:link,
+.header-nav-link.header-CTA:visited {
+  padding: 1.2rem 2.4rem !important;
+  display: inline-block;
+  border-radius: 0.9rem;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.header-nav-link.header-CTA:hover,
+.header-nav-link.header-CTA:active {
+  background-color: #cf711f;
+}
+
+/* ************************* */
+/* COMMON AND REUSABLE ELEMENTS */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+.margin-rt {
+  margin-right: 1.6rem !important;
+}
+
+.focus-text {
+  color: #cf711f;
+  font-weight: 700;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.9rem;
+
+  /* Transition/Animation */
+  transition: all 0.3s;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1;
+  margin-bottom: 3.2rem;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  display: inline-block;
+  color: #e67e22;
+  border-bottom: 0.2rem solid currentColor;
+  padding-bottom: 0.2rem;
+
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 0.2rem solid transparent;
+}
+
+.heading-secondary,
+.heading-primary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.sub-heading {
+  display: block;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #cf711f;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.075rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}

@@ -1,0 +1,103 @@
+/* Section 1 */
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+.hero {
+  display: grid;
+  gap: 9.6rem;
+  padding: 0 3.2rem;
+  grid-template-columns: 1fr 1fr;
+  max-width: 130rem;
+
+  margin: 0 auto;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
+.main-CTA-btn:link,
+.main-CTA-btn:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.main-CTA-btn:hover,
+.main-CTA-btn:active {
+  background-color: #cf711f;
+  color: #fff;
+}
+
+.extra-btn:link,
+.extra-btn:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.extra-btn:hover,
+.extra-btn:active {
+  background-color: #fdf2e9;
+  /* Trick To add border inwards */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.delivered-meals {
+  display: flex;
+  margin-top: 8rem;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.delivered-img {
+  display: flex;
+}
+
+.cust-img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 0.4rem solid #fdf2e9;
+}
+
+.cust-img:last-child {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.focus-text {
+  color: #cf711f;
+  font-weight: 700;
+}
+
+.btn-menu {
+  display: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.mobile-menu-icon {
+  font-size: 4.8rem;
+  color: #333;
+}
+
+.mobile-menu-icon[name="close"] {
+  display: none;
+}
